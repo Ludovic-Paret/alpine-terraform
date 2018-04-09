@@ -20,6 +20,7 @@ RUN apk update && \
     chmod +x terraform && \
     mv terraform /usr/local/bin/terraform && \
     apk del build-dependencies && \
-    rm -rf terraform_${TERRAFORM_VERSION}_* /var/cache/apk/* /tmp/*
+    rm -rf terraform_${TERRAFORM_VERSION}_* /var/cache/apk/* /tmp/* && \
+    terraform -v
 
 ENTRYPOINT []
