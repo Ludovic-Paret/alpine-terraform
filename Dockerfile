@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-ENV TERRAFORM_VERSION "0.11.4"
+ENV TERRAFORM_VERSION "0.11.6"
 
 ARG RUNTIME_DEPS="libintl git"
 ARG BUILD_DEPS="gnupg gettext openssl curl"
